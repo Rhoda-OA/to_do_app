@@ -33,25 +33,55 @@ class _HomeViewState extends State<HomeView> {
       'status': true,
     },
     {
-      'title': 'Suspendisse non fermentum magna.',
+      'title': 'Plan the trip to Finland',
       'description':
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum neque ligula, commodo vel iaculis eu, lacinia sit amet felis. Phasellus ultrices porta mauris vel fermentum. In hac habitasse platea dictumst. Vivamus sollicitudin tincidunt quam, sit amet aliquam orci sagittis id. Nunc tempus mollis mi, sed varius est accumsan in. Integer efficitur sem porta nulla consectetur, vel blandit sem bibendum. Sed sit amet tempor orci, eu porta lacus. Praesent at nisl vitae quam consequat gravida at sed quam. Nunc interdum hendrerit pulvinar. Phasellus bibendum, urna sit amet cursus efficitur, justo ante scelerisque orci, ac posuere elit neque in metus.',
-      'date_time': 'Tomorrow',
+          'The family\'s trip to Finland next summer',
+      'date_time': 'Yesterday',
       'status': false,
     },
     {
-      'title': 'Donec vestibulum egestas dapibus.',
-      'description':
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum neque ligula, commodo vel iaculis eu, lacinia sit amet felis. Phasellus ultrices porta mauris vel fermentum. In hac habitasse platea dictumst. Vivamus sollicitudin tincidunt quam, sit amet aliquam orci sagittis id. Nunc tempus mollis mi, sed varius est accumsan in. Integer efficitur sem porta nulla consectetur, vel blandit sem bibendum. Sed sit amet tempor orci, eu porta lacus. Praesent at nisl vitae quam consequat gravida at sed quam. Nunc interdum hendrerit pulvinar. Phasellus bibendum, urna sit amet cursus efficitur, justo ante scelerisque orci, ac posuere elit neque in metus.',
-      'date_time': 'Today',
+      'title': 'Plan Susan\'s birthday',
+          
+      'date_time': 'Today 13:00',
       'status': false,
     },
     {
       'title':
-          'Nullam viverra nisi vitae risus rhoncus, in ultrices leo tempor.',
+          'Groceries for Dinner',
       'description':
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum neque ligula, commodo vel iaculis eu, lacinia sit amet felis. Phasellus ultrices porta mauris vel fermentum. In hac habitasse platea dictumst. Vivamus sollicitudin tincidunt quam, sit amet aliquam orci sagittis id. Nunc tempus mollis mi, sed varius est accumsan in. Integer efficitur sem porta nulla consectetur, vel blandit sem bibendum. Sed sit amet tempor orci, eu porta lacus. Praesent at nisl vitae quam consequat gravida at sed quam. Nunc interdum hendrerit pulvinar. Phasellus bibendum, urna sit amet cursus efficitur, justo ante scelerisque orci, ac posuere elit neque in metus.',
-      'date_time': 'Mon. 15 Nov',
+          'Get tomatoes,lettuce,potatoes,green beans,cream and beef filet. Also, buy red wine at John\'s wine shop',
+      'date_time': 'Today 15:00',
+      'status': false,
+    },
+    {
+      'title':
+          'Port projects',
+      'description':
+          'Send the presentations tom Bill',
+      'date_time': 'Tomorrow',
+      'status': false,
+    },
+    {
+      'title':
+          'Take Jacket to cleaning',
+      
+      'date_time': 'Tomorrow',
+      'status': false,
+    },
+    {
+      'title':
+          'Fix dad\'s PC',
+      'description'
+      'Install the latest updates and check your wireless connection'
+      
+      'status': false,
+    },
+    {
+      'title':
+          'Trip to Stockholm',
+      'description'
+      'Talk with Monica about this trip'
+      
       'status': false,
     }
   ];
@@ -107,7 +137,8 @@ class _HomeViewState extends State<HomeView> {
                 ];
               }),
           IconButton(onPressed: () {}, icon: const Icon(Icons.search))
-        ],),floatingActionButton: FloatingActionButton(
+        ],),
+        floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.push(context, MaterialPageRoute(builder: (context) {
             return CreateTodoView();
